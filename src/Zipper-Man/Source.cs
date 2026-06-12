@@ -48,9 +48,20 @@ namespace Zipper_Man
             string zipFolder = SelectZipBox.Text;
             string extractFolder = SelectExFolderBox.Text;
 
+            Application.DoEvents();
+
             try
             {
-                zip.Extract(zipFolder, extractFolder, SelectCodeBox.Text);
+                // 進捗バーの初期化と更新
+                zip.Extract(zipFolder, extractFolder, SelectCodeBox.Text, (current, total) =>
+                {
+                    progressBar1.Maximum = total;
+                    progressBar1.Value = current;
+
+                    // UIの更新
+                    Application.DoEvents();
+                });
+
                 MessageBox.Show("Extract Successfully!", title, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             catch (Exception ex)

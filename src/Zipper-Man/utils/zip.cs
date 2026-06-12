@@ -7,15 +7,18 @@ namespace Zipper_Man.utils
 {
     internal class zip
     {
-        public void Extract(string zipFolder, string extractFolder, string encodingName)
+        public void Extract(string zipFolder, string extractFolder, string encodingName, Action<int, int> progressCallback = null)
         {
             Encoding encoding = Encoding.GetEncoding(str2Code(encodingName));
 
             // ZIPファイルの一覧を取得
             string[] zipFiles = Directory.GetFiles(zipFolder, "*.zip");
 
+            // 進捗バーの最大値を設定
+            progressCallback?.Invoke(0, zipFiles.Length);
 
             // 各ZIPファイルを解凍
+            int currentIndex = 0;
             foreach (string zipFile in zipFiles)
             {
                 // ZIPファイル名から拡張子を除いたフォルダ名を作成
@@ -29,6 +32,10 @@ namespace Zipper_Man.utils
 
                 // ZIPファイルを解凍
                 ZipFile.ExtractToDirectory(zipFile, destination, encoding);
+
+                // 進捗を更新
+                currentIndex++;
+                progressCallback?.Invoke(currentIndex, zipFiles.Length);
             }
         }
 
