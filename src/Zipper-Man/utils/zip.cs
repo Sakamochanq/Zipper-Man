@@ -9,7 +9,17 @@ namespace Zipper_Man.utils
     {
         public void Extract(string zipFolder, string extractFolder, string encodingName, Action<int, int> progressCallback = null)
         {
-            Encoding encoding = Encoding.GetEncoding(str2Code(encodingName));
+            if (string.IsNullOrEmpty(zipFolder))
+            {
+                throw new ArgumentException("Bonk!");
+            }
+
+            if (string.IsNullOrEmpty(extractFolder))
+            {
+                throw new ArgumentException("Bonk!");
+            }
+
+                Encoding encoding = Encoding.GetEncoding(str2Code(encodingName));
 
             // ZIPファイルの一覧を取得
             string[] zipFiles = Directory.GetFiles(zipFolder, "*.zip");
