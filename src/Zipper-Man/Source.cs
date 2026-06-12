@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using Zipper_Man.utils;
 using System;
+using Zipper_Man.forms;
 
 namespace Zipper_Man
 {
@@ -91,6 +92,12 @@ namespace Zipper_Man
         private void SelectButton2_Click(object sender, EventArgs e)
         {
             SelectFolderButton_Click(sender, e);
+        }
+
+        private void AuthorButton_Click(object sender, EventArgs e)
+        {
+            Form AuthorForm = new ZipperMan();
+            AuthorForm.ShowDialog();
         }
     }
 }
