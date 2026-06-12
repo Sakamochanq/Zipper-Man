@@ -162,7 +162,7 @@
             // SelectButton2
             // 
             this.SelectButton2.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton2.Location = new System.Drawing.Point(519, 120);
+            this.SelectButton2.Location = new System.Drawing.Point(519, 99);
             this.SelectButton2.Name = "SelectButton2";
             this.SelectButton2.Size = new System.Drawing.Size(38, 27);
             this.SelectButton2.TabIndex = 4;
@@ -173,7 +173,7 @@
             // SelectButton1
             // 
             this.SelectButton1.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton1.Location = new System.Drawing.Point(519, 51);
+            this.SelectButton1.Location = new System.Drawing.Point(519, 44);
             this.SelectButton1.Name = "SelectButton1";
             this.SelectButton1.Size = new System.Drawing.Size(38, 27);
             this.SelectButton1.TabIndex = 4;
@@ -185,7 +185,7 @@
             // 
             this.SelectCodeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SelectCodeBox.FormattingEnabled = true;
-            this.SelectCodeBox.Location = new System.Drawing.Point(149, 172);
+            this.SelectCodeBox.Location = new System.Drawing.Point(149, 165);
             this.SelectCodeBox.Name = "SelectCodeBox";
             this.SelectCodeBox.Size = new System.Drawing.Size(121, 20);
             this.SelectCodeBox.TabIndex = 3;
@@ -193,7 +193,7 @@
             // ExtractButton
             // 
             this.ExtractButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExtractButton.Location = new System.Drawing.Point(435, 173);
+            this.ExtractButton.Location = new System.Drawing.Point(435, 166);
             this.ExtractButton.Name = "ExtractButton";
             this.ExtractButton.Size = new System.Drawing.Size(124, 42);
             this.ExtractButton.TabIndex = 2;
@@ -207,7 +207,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectExFolderBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SelectExFolderBox.Location = new System.Drawing.Point(34, 124);
+            this.SelectExFolderBox.Location = new System.Drawing.Point(34, 103);
             this.SelectExFolderBox.Name = "SelectExFolderBox";
             this.SelectExFolderBox.ReadOnly = true;
             this.SelectExFolderBox.Size = new System.Drawing.Size(465, 19);
@@ -219,7 +219,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectZipBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SelectZipBox.Location = new System.Drawing.Point(34, 55);
+            this.SelectZipBox.Location = new System.Drawing.Point(34, 48);
             this.SelectZipBox.Name = "SelectZipBox";
             this.SelectZipBox.ReadOnly = true;
             this.SelectZipBox.Size = new System.Drawing.Size(465, 19);
@@ -229,7 +229,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(31, 97);
+            this.label2.Location = new System.Drawing.Point(31, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 0;
@@ -239,7 +239,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(37, 176);
+            this.label3.Location = new System.Drawing.Point(37, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 0;
@@ -270,7 +270,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(38, 207);
+            this.label4.Location = new System.Drawing.Point(38, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 12);
             this.label4.TabIndex = 5;
@@ -288,7 +288,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(430, 168);
+            this.progressBar1.Location = new System.Drawing.Point(430, 161);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(135, 51);
             this.progressBar1.TabIndex = 6;
