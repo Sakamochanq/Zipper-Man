@@ -92,7 +92,7 @@
 
 3. 文字コードの選択
 
-    ZIPファイル内のファイル名の文字コードを選択します。通常は「Shift_JIS」を選択しますが、必要に応じて他の文字コードを選択してください。
+    ZIPファイル内のファイル名の文字コードを選択します。必要に応じて他の文字コードを選択してください。
 
 <br>
 
@@ -144,7 +144,7 @@ Please convert this 3D-rendered look into a flat 2D vector art style. Keep the c
     <thead>
       <tr>
         <th>ZIPPER MAN</th>
-        <th>CHAINSAW MAN</th>
+        <th>CHAINSAW MAN © MAPPA</th>
       </tr>
     </thead>
     <tbody>
