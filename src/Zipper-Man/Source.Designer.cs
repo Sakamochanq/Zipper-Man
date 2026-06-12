@@ -38,12 +38,14 @@
             this.ExitButton = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ExtractButton = new System.Windows.Forms.Button();
+            this.SelectExFolderBox = new System.Windows.Forms.TextBox();
+            this.SelectZipBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.zipBox = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.SelectCodeBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -128,10 +130,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.zipBox);
+            this.tabPage1.Controls.Add(this.SelectCodeBox);
+            this.tabPage1.Controls.Add(this.ExtractButton);
+            this.tabPage1.Controls.Add(this.SelectExFolderBox);
+            this.tabPage1.Controls.Add(this.SelectZipBox);
             this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -141,15 +145,40 @@
             this.tabPage1.Text = "展開";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // ExtractButton
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(581, 258);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "圧縮";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.ExtractButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExtractButton.Location = new System.Drawing.Point(433, 193);
+            this.ExtractButton.Name = "ExtractButton";
+            this.ExtractButton.Size = new System.Drawing.Size(124, 42);
+            this.ExtractButton.TabIndex = 2;
+            this.ExtractButton.Text = "すべて展開 （&A）";
+            this.ExtractButton.UseVisualStyleBackColor = true;
+            this.ExtractButton.Click += new System.EventHandler(this.ExtractButton_Click);
+            // 
+            // SelectExFolderBox
+            // 
+            this.SelectExFolderBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectExFolderBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SelectExFolderBox.Location = new System.Drawing.Point(34, 136);
+            this.SelectExFolderBox.Name = "SelectExFolderBox";
+            this.SelectExFolderBox.ReadOnly = true;
+            this.SelectExFolderBox.Size = new System.Drawing.Size(523, 19);
+            this.SelectExFolderBox.TabIndex = 1;
+            // 
+            // SelectZipBox
+            // 
+            this.SelectZipBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectZipBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SelectZipBox.Location = new System.Drawing.Point(34, 55);
+            this.SelectZipBox.Name = "SelectZipBox";
+            this.SelectZipBox.ReadOnly = true;
+            this.SelectZipBox.Size = new System.Drawing.Size(523, 19);
+            this.SelectZipBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -161,28 +190,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "展開先 :";
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(34, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(523, 19);
-            this.textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(433, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "すべて展開 （&A）";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -193,17 +200,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ZIPの入ったフォルダ :";
             // 
-            // zipBox
+            // tabPage2
             // 
-            this.zipBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.zipBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.zipBox.Location = new System.Drawing.Point(34, 55);
-            this.zipBox.Name = "zipBox";
-            this.zipBox.ReadOnly = true;
-            this.zipBox.Size = new System.Drawing.Size(523, 19);
-            this.zipBox.TabIndex = 1;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(581, 258);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "圧縮";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // SelectCodeBox
+            // 
+            this.SelectCodeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SelectCodeBox.FormattingEnabled = true;
+            this.SelectCodeBox.Location = new System.Drawing.Point(149, 172);
+            this.SelectCodeBox.Name = "SelectCodeBox";
+            this.SelectCodeBox.Size = new System.Drawing.Size(121, 20);
+            this.SelectCodeBox.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(37, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "文字コードの指定：";
             // 
             // Source
             // 
@@ -241,11 +265,13 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button ExtractButton;
+        private System.Windows.Forms.TextBox SelectExFolderBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox zipBox;
+        private System.Windows.Forms.TextBox SelectZipBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox SelectCodeBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 
