@@ -1,9 +1,7 @@
 <div align="center">
-    <img src="./assets/Zipper-Man-transp.png">
+    <img src="./assets/Zipper-Man-Readme.png">
 </div>
 
-<br>
-<hr>
 <br>
 
 <div align="center">
@@ -11,6 +9,13 @@
     <p>ZIPPER-MANとは、複数のZIPファイルを一括で展開するためのアプリケーションです。</p>
 </div>
 
+<br>
+
+<h3>ダウンロード</h3>
+
+[こちら](https://github.com/Sakamochanq/Zipper-Man/releases)から任意のバージョンをダウンロードしてください。
+
+<br>
 <br>
 
 <h3>技術スタック</h3>
@@ -123,7 +128,14 @@
 
 <h3>バナー画像について</h3>
 
-バナー画像は`ChatGPT for Create Image`により生成されました。なお、パロディ元であるチェンソーマンの画像は学習に使用していないことをここに明記します。生成された画像は、チェンソーマンのイメージを参考にしつつも、オリジナルのデザインとなっています。パロディ元の画像は [アニメーションスタジオ 株式会社MAPPA](https://www.mappa.co.jp/) の著作物であり、当プロジェクトとは一切関係ありません。
+バナー画像は`ChatGPT for Create Image`により生成されました。なお、パロディ元であるチェンソーマンの画像は学習に使用していないことをここに明記します。生成された画像は、以下のプロンプトより生成されました。パロディ元の画像は [アニメーションスタジオ 株式会社MAPPA](https://www.mappa.co.jp/) の著作物であり、当プロジェクトとは一切関係ありません。
+
+<br>
+
+```
+Prompt:
+Please convert this 3D-rendered look into a flat 2D vector art style. Keep the character's pose, the yellow ZIP folder head, and the pile of icons exactly the same, but radically change the shading. Remove all realistic smooth gradients, soft shadows, and metallic reflections from the zipper and chainsaw. Instead, apply thick black outlines (cel shading) and solid flat colors. It should look like a simple digital pop-art graphic or a 2D anime sticker, completely flat with zero depth.
+```
 
 <br>
 
@@ -131,8 +143,8 @@
   <table>
     <thead>
       <tr>
-        <th>Fig3. ZIPPER MAN</th>
-        <th>Fig4. CHAINSAW MAN</th>
+        <th>ZIPPER MAN</th>
+        <th>CHAINSAW MAN</th>
       </tr>
     </thead>
     <tbody>
