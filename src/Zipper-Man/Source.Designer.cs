@@ -60,8 +60,8 @@
             this.toolStripMenuItem2,
             this.ExitButton});
             this.ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem";
-            this.ファイルFToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.ファイルFToolStripMenuItem.Text = "ファイル（F）";
+            this.ファイルFToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.ファイルFToolStripMenuItem.Text = "展開（&E）";
             // 
             // NewButton
             // 
