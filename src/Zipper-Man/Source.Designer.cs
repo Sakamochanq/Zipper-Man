@@ -46,6 +46,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.SelectCodeBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.SelectButton1 = new System.Windows.Forms.Button();
+            this.SelectButton2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -82,6 +84,7 @@
             | System.Windows.Forms.Keys.N)));
             this.NewButton.Size = new System.Drawing.Size(240, 22);
             this.NewButton.Text = "新規作成";
+            this.NewButton.Click += new System.EventHandler(this.NewButton_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -94,6 +97,7 @@
             this.SelectZipButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.SelectZipButton.Size = new System.Drawing.Size(240, 22);
             this.SelectZipButton.Text = "ZIPの入ったフォルダを選択";
+            this.SelectZipButton.Click += new System.EventHandler(this.SelectZipButton_Click);
             // 
             // SelectFolderButton
             // 
@@ -102,6 +106,7 @@
             | System.Windows.Forms.Keys.O)));
             this.SelectFolderButton.Size = new System.Drawing.Size(240, 22);
             this.SelectFolderButton.Text = "展開先を選択";
+            this.SelectFolderButton.Click += new System.EventHandler(this.SelectFolderButton_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -114,6 +119,7 @@
             this.ExitButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.ExitButton.Size = new System.Drawing.Size(240, 22);
             this.ExitButton.Text = "終了";
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // tabControl1
             // 
@@ -130,6 +136,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.SelectButton2);
+            this.tabPage1.Controls.Add(this.SelectButton1);
             this.tabPage1.Controls.Add(this.SelectCodeBox);
             this.tabPage1.Controls.Add(this.ExtractButton);
             this.tabPage1.Controls.Add(this.SelectExFolderBox);
@@ -165,7 +173,7 @@
             this.SelectExFolderBox.Location = new System.Drawing.Point(34, 136);
             this.SelectExFolderBox.Name = "SelectExFolderBox";
             this.SelectExFolderBox.ReadOnly = true;
-            this.SelectExFolderBox.Size = new System.Drawing.Size(523, 19);
+            this.SelectExFolderBox.Size = new System.Drawing.Size(465, 19);
             this.SelectExFolderBox.TabIndex = 1;
             // 
             // SelectZipBox
@@ -177,7 +185,7 @@
             this.SelectZipBox.Location = new System.Drawing.Point(34, 55);
             this.SelectZipBox.Name = "SelectZipBox";
             this.SelectZipBox.ReadOnly = true;
-            this.SelectZipBox.Size = new System.Drawing.Size(523, 19);
+            this.SelectZipBox.Size = new System.Drawing.Size(465, 19);
             this.SelectZipBox.TabIndex = 1;
             // 
             // label2
@@ -229,6 +237,28 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "文字コードの指定：";
             // 
+            // SelectButton1
+            // 
+            this.SelectButton1.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SelectButton1.Location = new System.Drawing.Point(519, 51);
+            this.SelectButton1.Name = "SelectButton1";
+            this.SelectButton1.Size = new System.Drawing.Size(38, 27);
+            this.SelectButton1.TabIndex = 4;
+            this.SelectButton1.Text = "...";
+            this.SelectButton1.UseVisualStyleBackColor = true;
+            this.SelectButton1.Click += new System.EventHandler(this.SelectButton1_Click);
+            // 
+            // SelectButton2
+            // 
+            this.SelectButton2.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SelectButton2.Location = new System.Drawing.Point(519, 132);
+            this.SelectButton2.Name = "SelectButton2";
+            this.SelectButton2.Size = new System.Drawing.Size(38, 27);
+            this.SelectButton2.TabIndex = 4;
+            this.SelectButton2.Text = "...";
+            this.SelectButton2.UseVisualStyleBackColor = true;
+            this.SelectButton2.Click += new System.EventHandler(this.SelectButton2_Click);
+            // 
             // Source
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -272,6 +302,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox SelectCodeBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button SelectButton2;
+        private System.Windows.Forms.Button SelectButton1;
     }
 }
 
