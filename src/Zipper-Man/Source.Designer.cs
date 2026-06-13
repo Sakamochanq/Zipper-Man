@@ -36,6 +36,8 @@
             this.SelectFolderButton = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.ExitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AuthorButton = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
-            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AuthorButton = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -128,6 +128,21 @@
             this.ExitButton.Text = "終了";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // ヘルプHToolStripMenuItem
+            // 
+            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AuthorButton});
+            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
+            this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.ヘルプHToolStripMenuItem.Text = "ヘルプ（&H）";
+            // 
+            // AuthorButton
+            // 
+            this.AuthorButton.Name = "AuthorButton";
+            this.AuthorButton.Size = new System.Drawing.Size(210, 22);
+            this.AuthorButton.Text = "Zipper Man について （A）";
+            this.AuthorButton.Click += new System.EventHandler(this.AuthorButton_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -138,7 +153,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(589, 272);
+            this.tabControl1.Size = new System.Drawing.Size(589, 242);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -153,11 +168,10 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.progressBar1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(581, 246);
+            this.tabPage1.Size = new System.Drawing.Size(581, 216);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "展開";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -166,7 +180,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(38, 200);
+            this.label4.Location = new System.Drawing.Point(36, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 12);
             this.label4.TabIndex = 5;
@@ -174,8 +188,9 @@
             // 
             // SelectButton2
             // 
+            this.SelectButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.SelectButton2.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton2.Location = new System.Drawing.Point(519, 99);
+            this.SelectButton2.Location = new System.Drawing.Point(519, 100);
             this.SelectButton2.Name = "SelectButton2";
             this.SelectButton2.Size = new System.Drawing.Size(38, 27);
             this.SelectButton2.TabIndex = 4;
@@ -185,8 +200,9 @@
             // 
             // SelectButton1
             // 
+            this.SelectButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.SelectButton1.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton1.Location = new System.Drawing.Point(519, 44);
+            this.SelectButton1.Location = new System.Drawing.Point(519, 45);
             this.SelectButton1.Name = "SelectButton1";
             this.SelectButton1.Size = new System.Drawing.Size(38, 27);
             this.SelectButton1.TabIndex = 4;
@@ -198,15 +214,15 @@
             // 
             this.SelectCodeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SelectCodeBox.FormattingEnabled = true;
-            this.SelectCodeBox.Location = new System.Drawing.Point(149, 165);
+            this.SelectCodeBox.Location = new System.Drawing.Point(147, 149);
             this.SelectCodeBox.Name = "SelectCodeBox";
             this.SelectCodeBox.Size = new System.Drawing.Size(121, 20);
             this.SelectCodeBox.TabIndex = 3;
             // 
             // ExtractButton
             // 
-            this.ExtractButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExtractButton.Location = new System.Drawing.Point(435, 166);
+            this.ExtractButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ExtractButton.Location = new System.Drawing.Point(433, 150);
             this.ExtractButton.Name = "ExtractButton";
             this.ExtractButton.Size = new System.Drawing.Size(124, 42);
             this.ExtractButton.TabIndex = 2;
@@ -252,7 +268,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(37, 169);
+            this.label3.Location = new System.Drawing.Point(35, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
             this.label3.TabIndex = 0;
@@ -270,9 +286,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(430, 161);
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar1.Location = new System.Drawing.Point(0, 293);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(135, 51);
+            this.progressBar1.Size = new System.Drawing.Size(613, 10);
             this.progressBar1.TabIndex = 6;
             // 
             // tabPage2
@@ -281,7 +298,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(581, 246);
+            this.tabPage2.Size = new System.Drawing.Size(581, 214);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "圧縮";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -296,28 +313,14 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Coming Soon";
             // 
-            // ヘルプHToolStripMenuItem
-            // 
-            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AuthorButton});
-            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
-            this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.ヘルプHToolStripMenuItem.Text = "ヘルプ（&H）";
-            // 
-            // AuthorButton
-            // 
-            this.AuthorButton.Name = "AuthorButton";
-            this.AuthorButton.Size = new System.Drawing.Size(210, 22);
-            this.AuthorButton.Text = "Zipper Man について （A）";
-            this.AuthorButton.Click += new System.EventHandler(this.AuthorButton_Click);
-            // 
             // Source
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 321);
+            this.ClientSize = new System.Drawing.Size(613, 303);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
