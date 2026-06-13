@@ -64,7 +64,7 @@
             this.ファイルFToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(613, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(539, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -135,7 +135,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(589, 242);
+            this.tabControl1.Size = new System.Drawing.Size(515, 242);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -153,7 +153,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(581, 216);
+            this.tabPage1.Size = new System.Drawing.Size(507, 216);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "展開";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -172,7 +172,7 @@
             // 
             this.SelectButton2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.SelectButton2.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton2.Location = new System.Drawing.Point(519, 100);
+            this.SelectButton2.Location = new System.Drawing.Point(445, 100);
             this.SelectButton2.Name = "SelectButton2";
             this.SelectButton2.Size = new System.Drawing.Size(38, 27);
             this.SelectButton2.TabIndex = 4;
@@ -184,7 +184,7 @@
             // 
             this.SelectButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.SelectButton1.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.SelectButton1.Location = new System.Drawing.Point(519, 45);
+            this.SelectButton1.Location = new System.Drawing.Point(445, 45);
             this.SelectButton1.Name = "SelectButton1";
             this.SelectButton1.Size = new System.Drawing.Size(38, 27);
             this.SelectButton1.TabIndex = 4;
@@ -204,7 +204,7 @@
             // ExtractButton
             // 
             this.ExtractButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.ExtractButton.Location = new System.Drawing.Point(433, 150);
+            this.ExtractButton.Location = new System.Drawing.Point(359, 150);
             this.ExtractButton.Name = "ExtractButton";
             this.ExtractButton.Size = new System.Drawing.Size(124, 42);
             this.ExtractButton.TabIndex = 2;
@@ -221,7 +221,7 @@
             this.SelectExFolderBox.Location = new System.Drawing.Point(34, 103);
             this.SelectExFolderBox.Name = "SelectExFolderBox";
             this.SelectExFolderBox.ReadOnly = true;
-            this.SelectExFolderBox.Size = new System.Drawing.Size(465, 19);
+            this.SelectExFolderBox.Size = new System.Drawing.Size(391, 19);
             this.SelectExFolderBox.TabIndex = 1;
             // 
             // SelectZipBox
@@ -233,7 +233,7 @@
             this.SelectZipBox.Location = new System.Drawing.Point(34, 48);
             this.SelectZipBox.Name = "SelectZipBox";
             this.SelectZipBox.ReadOnly = true;
-            this.SelectZipBox.Size = new System.Drawing.Size(465, 19);
+            this.SelectZipBox.Size = new System.Drawing.Size(391, 19);
             this.SelectZipBox.TabIndex = 1;
             // 
             // label2
@@ -271,7 +271,7 @@
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.progressBar1.Location = new System.Drawing.Point(0, 293);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(613, 10);
+            this.progressBar1.Size = new System.Drawing.Size(539, 10);
             this.progressBar1.TabIndex = 6;
             // 
             // tabPage2
@@ -299,7 +299,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 303);
+            this.ClientSize = new System.Drawing.Size(539, 303);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.progressBar1);
