@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Zipper_Man.utils
 {
@@ -64,7 +65,7 @@ namespace Zipper_Man.utils
                     return 51932;
 
                 default:
-                    throw new ArgumentException($"Bonk!");
+                    throw new ArgumentException("使用できない文字コードの可能性があります。");
             }
         }
     }

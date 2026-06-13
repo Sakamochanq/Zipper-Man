@@ -16,7 +16,7 @@ namespace Zipper_Man
             SelectCodeBox.Items.Add("Shift-JIS");
             SelectCodeBox.Items.Add("EUC-JP");
 
-            SelectCodeBox.SelectedIndex = 1;
+            SelectCodeBox.SelectedIndex = 0;
 
             // ドラッグ&ドロップイベント登録
             SelectZipBox.DragEnter += SelectZipBox_DragEnter;
@@ -57,13 +57,14 @@ namespace Zipper_Man
 
             string zipFolder = SelectZipBox.Text;
             string extractFolder = SelectExFolderBox.Text;
+            string code = SelectCodeBox.SelectedItem.ToString();
 
             Application.DoEvents();
 
             try
             {
                 // 進捗バーの初期化と更新
-                zip.Extract(zipFolder, extractFolder, SelectCodeBox.Text, (current, total) =>
+                zip.Extract(zipFolder, extractFolder, code, (current, total) =>
                 {
                     progressBar1.Maximum = total;
                     progressBar1.Value = current;

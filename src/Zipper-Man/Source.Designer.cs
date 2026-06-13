@@ -48,9 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -164,9 +164,9 @@
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label4.Location = new System.Drawing.Point(36, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 12);
+            this.label4.Size = new System.Drawing.Size(141, 12);
             this.label4.TabIndex = 5;
-            this.label4.Text = "※ 一般的に Shift-JIS を使用";
+            this.label4.Text = "※ 一般的に UTF-8 を使用";
             // 
             // SelectButton2
             // 
@@ -226,10 +226,10 @@
             // 
             // SelectZipBox
             // 
+            this.SelectZipBox.AllowDrop = true;
             this.SelectZipBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SelectZipBox.AllowDrop = true;
             this.SelectZipBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SelectZipBox.Location = new System.Drawing.Point(34, 48);
             this.SelectZipBox.Name = "SelectZipBox";
@@ -267,21 +267,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ZIPの入ったフォルダ :";
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(0, 293);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(539, 10);
-            this.progressBar1.TabIndex = 6;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(581, 216);
+            this.tabPage2.Size = new System.Drawing.Size(507, 216);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "圧縮";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -295,6 +287,14 @@
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Coming Soon";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar1.Location = new System.Drawing.Point(0, 293);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(539, 10);
+            this.progressBar1.TabIndex = 6;
             // 
             // Source
             // 
