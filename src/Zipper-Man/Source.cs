@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using Zipper_Man.utils;
 using System;
+using System.IO;
 
 namespace Zipper_Man
 {
@@ -15,6 +16,10 @@ namespace Zipper_Man
             SelectCodeBox.Items.Add("EUC-JP");
 
             SelectCodeBox.SelectedIndex = 1;
+
+            // ドラッグ&ドロップイベント登録
+            SelectZipBox.DragEnter += SelectZipBox_DragEnter;
+            SelectZipBox.DragDrop += SelectZipBox_DragDrop;
         }
 
         string title = "Zipper Man";
@@ -91,6 +96,53 @@ namespace Zipper_Man
         private void SelectButton2_Click(object sender, EventArgs e)
         {
             SelectFolderButton_Click(sender, e);
+        }
+
+        // SelectZipBoxへのドラッグエンター処理
+        private void SelectZipBox_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                // フォルダのみを許可
+                if (files.Length > 0 && Directory.Exists(files[0]))
+                {
+                    e.Effect = DragDropEffects.Copy;
+                }
+                else
+                {
+                    e.Effect = DragDropEffects.None;
+                }
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
+        }
+
+        // SelectZipBoxへのドロップ処理
+        private void SelectZipBox_DragDrop(object sender, DragEventArgs e)
+        {
+            try
+            {
+                if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                {
+                    string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                    if (files.Length > 0)
+                    {
+                        string path = files[0];
+                        // フォルダが存在する場合のみ設定
+                        if (System.IO.Directory.Exists(path))
+                        {
+                            SelectZipBox.Text = path;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( ex.Message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
