@@ -13,6 +13,16 @@
 
 <h3>ダウンロード</h3>
 
+<br>
+
+<div align="left">
+    <a href="https://github.com/Sakamochanq/Zipper-Man/actions/workflows/build-release.yml">
+        <img alt="Build and Release" src="https://github.com/Sakamochanq/Zipper-Man/actions/workflows/build-release.yml/badge.svg">
+    </a>
+</div>
+
+<br>
+
 [こちら](https://github.com/Sakamochanq/Zipper-Man/releases)から任意のバージョンをダウンロードしてください。
 
 <br>
