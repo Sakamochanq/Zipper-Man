@@ -46,7 +46,7 @@ jobs:
           copy "src/Zipper-Man/bin/Release/Zipper-Man.exe" "release/"
       
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Zipper-Man-exe
           path: release/Zipper-Man.exe
