@@ -92,9 +92,5 @@ namespace Zipper_Man
         {
             SelectFolderButton_Click(sender, e);
         }
-
-        private void AuthorButton_Click(object sender, EventArgs e)
-        {
-        }
     }
 }

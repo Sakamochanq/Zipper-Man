@@ -36,8 +36,6 @@
             this.SelectFolderButton = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.ExitButton = new System.Windows.Forms.ToolStripMenuItem();
-            this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AuthorButton = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,8 +61,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ファイルFToolStripMenuItem,
-            this.ヘルプHToolStripMenuItem});
+            this.ファイルFToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(613, 24);
@@ -127,21 +124,6 @@
             this.ExitButton.Size = new System.Drawing.Size(240, 22);
             this.ExitButton.Text = "終了";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
-            // ヘルプHToolStripMenuItem
-            // 
-            this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AuthorButton});
-            this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
-            this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.ヘルプHToolStripMenuItem.Text = "ヘルプ（&H）";
-            // 
-            // AuthorButton
-            // 
-            this.AuthorButton.Name = "AuthorButton";
-            this.AuthorButton.Size = new System.Drawing.Size(210, 22);
-            this.AuthorButton.Text = "Zipper Man について （A）";
-            this.AuthorButton.Click += new System.EventHandler(this.AuthorButton_Click);
             // 
             // tabControl1
             // 
@@ -298,7 +280,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(581, 214);
+            this.tabPage2.Size = new System.Drawing.Size(581, 216);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "圧縮";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -306,10 +288,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label5.Location = new System.Drawing.Point(32, 26);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 15);
+            this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Coming Soon";
             // 
@@ -364,8 +346,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ToolStripMenuItem ヘルプHToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AuthorButton;
     }
 }
 
