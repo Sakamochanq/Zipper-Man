@@ -14,7 +14,7 @@ namespace Zipper_Man
             SelectCodeBox.Items.Add("Shift-JIS");
             SelectCodeBox.Items.Add("EUC-JP");
 
-            SelectCodeBox.SelectedIndex = 0;
+            SelectCodeBox.SelectedIndex = 1;
         }
 
         string title = "Zipper Man";

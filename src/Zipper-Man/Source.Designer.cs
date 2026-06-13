@@ -182,9 +182,9 @@
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label4.Location = new System.Drawing.Point(36, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 12);
+            this.label4.Size = new System.Drawing.Size(154, 12);
             this.label4.TabIndex = 5;
-            this.label4.Text = "※ 一般的に UTF-8 を使用";
+            this.label4.Text = "※ 一般的に Shift-JIS を使用";
             // 
             // SelectButton2
             // 
