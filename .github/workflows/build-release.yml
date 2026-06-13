@@ -26,7 +26,7 @@ jobs:
         run: nuget restore src/Zipper-Man.sln
       
       - name: Build solution
-        run: msbuild src/Zipper-Man.sln /p:Configuration=Release /p:Platform=AnyCPU
+        run: msbuild src/Zipper-Man.sln /p:Configuration=Release /p:Platform="Any CPU"
       
       - name: Get version from AssemblyInfo
         id: version
