@@ -92,7 +92,7 @@
 
 3. 文字コードの選択
 
-    ZIPファイル内のファイル名の文字コードを選択します。通常は「Shift_JIS」を選択しますが、必要に応じて他の文字コードを選択してください。
+    ZIPファイル内のファイル名の文字コードを選択します。必要に応じて他の文字コードを選択してください。
 
 <br>
 
@@ -133,8 +133,7 @@
 <br>
 
 ```
-Prompt:
-Please convert this 3D-rendered look into a flat 2D vector art style. Keep the character's pose, the yellow ZIP folder head, and the pile of icons exactly the same, but radically change the shading. Remove all realistic smooth gradients, soft shadows, and metallic reflections from the zipper and chainsaw. Instead, apply thick black outlines (cel shading) and solid flat colors. It should look like a simple digital pop-art graphic or a 2D anime sticker, completely flat with zero depth.
+A cute chibi-style parody of Chainsaw Man standing heroically on a pile of glitchy Windows desktop icons, recycle bins, and broken old system error windows, posing exactly like the official anime poster. Instead of a chainsaw, his head and arms are made of orange and yellow ZIP folders with large zippers sticking out. The character wears a white shirt, a black tie, and grey trousers. The background shows futuristic skyscrapers under a blue sky. The overall atmosphere is colorful, cute, and playful, with clean vector-style lines and dynamic anime lighting. Software banner illustration style.
 ```
 
 <br>
@@ -144,7 +143,7 @@ Please convert this 3D-rendered look into a flat 2D vector art style. Keep the c
     <thead>
       <tr>
         <th>ZIPPER MAN</th>
-        <th>CHAINSAW MAN</th>
+        <th>CHAINSAW MAN © MAPPA</th>
       </tr>
     </thead>
     <tbody>
