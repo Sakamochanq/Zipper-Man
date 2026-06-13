@@ -2,6 +2,7 @@
 using Zipper_Man.utils;
 using System;
 using System.IO;
+using System.Reflection;
 
 namespace Zipper_Man
 {
@@ -20,6 +21,10 @@ namespace Zipper_Man
             // ドラッグ&ドロップイベント登録
             SelectZipBox.DragEnter += SelectZipBox_DragEnter;
             SelectZipBox.DragDrop += SelectZipBox_DragDrop;
+
+            //Assembly情報からバージョンの取得
+            string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            this.Text = $"ZIPPER MAN   |   Sakamochanq   v{version}";
         }
 
         string title = "Zipper Man";
