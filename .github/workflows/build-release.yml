@@ -51,14 +51,11 @@ jobs:
           name: Zipper-Man-exe
           path: release/Zipper-Man.exe
       
-      - name: Create GitHub Release (Draft)
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create GitHub Release with Assets
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.version.outputs.VERSION }}
-          release_name: "v${{ steps.version.outputs.VERSION }}"
+          name: "v${{ steps.version.outputs.VERSION }}"
           body: |
             ## Release Notes
             
@@ -67,15 +64,8 @@ jobs:
             **Build Details:**
             - Commit: ${{ github.sha }}
             - Run ID: ${{ github.run_id }}
+          files: release/Zipper-Man.exe
           draft: true
           prerelease: false
-      
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: release/Zipper-Man.exe
-          asset_name: Zipper-Man.exe
-          asset_content_type: application/octet-stream
